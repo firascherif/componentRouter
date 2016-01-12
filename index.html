@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-<body ng-app="myApp" ng-controller="AppController as app">
+<body background="./img/background.jpg" ng-app="myApp" ng-controller="AppController as app" ng-cloak>
 
 
 <div class="container">
@@ -18,8 +18,9 @@
   </div>
   <div class="row">
     <div class="col-sm-4">
-      <h3>information</h3>
+      <font color="red"><h3>information</h3>
       <div  ng-viewport="details"></div>
+	 
     </div>
     <div class="col-sm-4">
       <h3>formulaire</h3>
@@ -29,7 +30,7 @@
       <h3>login</h3> 
 	  <p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
       <div  ng-viewport="login"></div></br>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></font>
     </div>
   </div>
 </div>

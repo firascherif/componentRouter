@@ -3,22 +3,29 @@
 <body>
 <div ng-controller="formC" ng-cloak>
 
-	 
-  <p>C'est mon formulaire</p>
-  
-  <form action="action_page.php">
-  First name:<br>
-  <input type="text" name="name" value="Mickey">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
- <br>
- 
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+<form method="POST" action="traitement.php">
+	<h4>Votre adresse e-mail</h4><input type="text" name="mail" class="form-control" size="20" placeholder="Email Address" required  >
+	<br><input type="checkbox" NAME="mailing" value="oui" checked/> abonnement gratuit 
+	<br>
+	
+	<h4>Description de votre site<h4>
+	<textarea name="description" rows="3" cols="30" class="form-control" size="20"></textarea><br>
+	
+	<h4>Type d'échange souhaité :</h4>
+	<select name="demande">
+		<option selected="selected" value="echange de liens">Echange de liens</option>
+		<option value="partenariat">Partenariat</option>
+	</select><br>
+
+	<h4>Dans quelle rubrique souhaitez-vous être présent ?</h4>
+	<input type="radio" name="rubrique" value="environnement" />Environnement / Ecologie<br>
+	<input type="radio" name="rubrique" value="geographie" />Géographie<br>
+	<input type="radio" name="rubrique" />Photos
+	
+	<br>
+    <input type="submit" class="btn btn-success" value="Submit">
+</form>
+
 </div>
 
 </body>

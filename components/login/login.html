@@ -2,13 +2,17 @@
 <html>
 <body>
 
-<form action="action_page.php">
+<form action="action_page.php" method="post">
   First name:<br>
-  <input type="text" name="name" value="Mickey">
+  <input type="text" name="name" >
   <br>
   Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br><br>
+  <input type="text" name="lastname" >
+  <br>
+   <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+   </div><br>
+   
   <input type="submit" class="btn btn-success" value="Submit">
   
 </form> 

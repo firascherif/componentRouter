@@ -20,3 +20,9 @@
   left: 7px;
   font-size: 14px;
   opacity: 0.54; }
+  
+  .menudemoBasicUsage .md-menu-demo {
+  padding: 24px; }
+
+.menudemoBasicUsage .menu-demo-container {
+  min-height: 200px; }
