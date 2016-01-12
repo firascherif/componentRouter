@@ -4,19 +4,49 @@
   <meta charset="utf-8">
   <base href="/">
   <title>My app</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body ng-app="myApp" ng-controller="AppController as app">
- <div ng-viewport="details"></div>
- <div ng-viewport="home"><div>
 
+
+<div class="container">
+  <div class="jumbotron">
+    <h1><div  ng-viewport="home"></div></h1>
+    <p>CE MESSAGE EST DANS index.html!</p> 
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>information</h3>
+      <div  ng-viewport="details"></div>
+    </div>
+    <div class="col-sm-4">
+      <h3>formulaire</h3>
+      <div  ng-viewport="form"></div>
+    </div>
+    <div class="col-sm-4">
+      <h3>login</h3> 
+	  <p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
+      <div  ng-viewport="login"></div></br>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
  
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
+
+
   <script src="/node_modules/angular/angular.js"></script>
   <script src="/node_modules/angular-new-router/dist/router.es5.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script> 
   <script src="/app.js"></script>
   
-  <script src="./components/home/home.js"></script>
-  <script src="./components/details/details.js"></script>
+ <script src="./components/home/home.js"></script> 
+ <script src="./components/details/details.js"></script>
+ <script src="./components/form/form.js"></script>
+  <script src="./components/login/login.js"></script>
+
+  
 </body>
 </html>

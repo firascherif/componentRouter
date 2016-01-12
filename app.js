@@ -1,16 +1,15 @@
-var app = angular.module('myApp', ['ngNewRouter' ,'app.details', 'app.home'])
+var app = angular.module('myApp', ['ngNewRouter' , 'app.form','app.details', 'app.home' , 'app.login'])
  app.controller('AppController', ['$router', function($router){
 	 
 	$router.config([
    {
      path: '/', component: {
+		form : 'form',
+        details : 'details',
         home : 'home',
-        details : 'details'
+		login : 'login'
      } 
     }
-]);
-	 
-	 
-	 
- }]);
+]);	 
+}]);
 
